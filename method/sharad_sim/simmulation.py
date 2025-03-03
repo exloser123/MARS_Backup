@@ -662,7 +662,7 @@ if __name__ == "__main__":
     # rgram_hh, rgram_vv = cal_rgram(
     #     delay, point_count, delay_index, sgm_hh, sgm_vv, area
     # )
-    sim_main("S_00170101")
+    sim_main("S_01219901")
     # 播放音效提示
     import winsound
 
@@ -687,3 +687,9 @@ if __name__ == "__main__":
     # S_04725901
     # S_05464301
     # S_06337301
+
+    # S_01716901 NPLD
+    # S_00563101 SPLD
+    # S_02570502 Utopia
+    # S_01389101 Utopia
+    # S_01219901 Amazonis Planitia

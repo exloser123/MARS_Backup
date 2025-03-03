@@ -31,6 +31,12 @@ def get_units(lon, lat):
     # 转成整数索引
     lon_index = np.int32((lon + 180) / interval)
     lat_index = np.int32((90 - lat) / interval)
+    # # 打印最大值最小值
+    # print("lon_index max:", np.max(lon_index))
+    # print("lon_index min:", np.min(lon_index))
+    # print("lat_index max:", np.max(lat_index))
+    # print("lat_index min:", np.min(lat_index))
+    
     lon_index[lon_index == 3600] = 0
     lat_index[lat_index == 1800] = 0
     # 从grid_unit中取出对应的单元格

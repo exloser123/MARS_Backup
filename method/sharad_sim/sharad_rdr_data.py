@@ -41,10 +41,10 @@ def get_sharad_rdr_data(PRODUCT_ID):
     # 读取RGRAM
     rgram = pdr.read(os.path.join(save_path, filenames[2]))
     rgram = rgram["IMAGE"]
-    if rgram.shape[1] > 4500:
-        rgram = rgram[:, :4500]
+    if rgram.shape[1] > 5000:
+        rgram = rgram[:, :5000]
         # geom也要截断
-        geom = geom[geom["RADARGRAM COLUMN"] <= 4500]
+        geom = geom[geom["RADARGRAM COLUMN"] <= 5000]
 
     return geom, rgram
 
